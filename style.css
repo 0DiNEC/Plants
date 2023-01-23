@@ -1,2 +1,145 @@
-* {  margin: 0; padding: 0; }
+* {
+  margin: 0;
+  padding: 0;
+}
 
+li {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #EDF2EC;
+  height: 134px;
+  padding-left: 110px;
+  padding-right: 110px;
+}
+
+.logo {
+  display: flex;
+
+  align-items: center;
+  width: 40%;
+  font-family: 'Inika';
+  font-size: 16px;
+  line-height: 50px;
+}
+
+nav {
+  display: flex;
+  flex-grow: 1;
+}
+
+nav ul {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+  align-items: center;
+
+  font-family: 'Inika';
+  font-size: 16px;
+  line-height: 50px;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.section-welcome {
+  display: flex;
+  background-color: #EDF2EC;
+  padding-left: 110px;
+  padding-right: 110px;
+}
+
+.section-welcome-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-info {
+  width: 550px;
+}
+
+.welcome-info h1 {
+  padding-bottom: 42px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 50px;
+  color: #717171;
+}
+
+.welcome-info h1 span {
+  color: #499A18;
+}
+
+.welcome-info p {
+  text-align: justify;
+  font-family: 'Inter';
+  font-size: 25px;
+  line-height: 35px;
+  color: #636060;
+}
+
+.button-learn {
+  border: 2px solid #E06733;
+  color: #000000;
+  background: #edf2ec;
+  border-radius: 10px;
+  margin-top: 50px;
+  padding: 14px 27px;
+
+  font-family: 'Inter';
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button-learn:hover {
+  background-color: #E06733;
+  color: #ffffff;
+  transition: .5s ease-in-out;
+}
+
+.about {
+  padding-left: 110px;
+  padding-right: 110px;
+}
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 605px;
+}
+
+.about-us h1 {
+  color: #499A18;
+  margin-bottom: 40px;
+
+  font-family: 'Inika';
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.about-us p {
+  
+font-family: 'Inter';
+font-size: 20px;
+line-height: 30px;
+
+color: #636060;
+}
