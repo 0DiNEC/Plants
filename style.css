@@ -16,13 +16,6 @@ li {
   padding-right: 110px;
 }
 
-@media screen and (max-width: 1000px) {
-  .navbar {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
-
 .logo {
   display: flex;
   align-items: center;
@@ -54,12 +47,32 @@ nav ul li {
   height: 50px;
 }
 
+@media (max-width: 1000px) {
+  .navbar {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  .navbar {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  nav {
+    display: none;
+  }
+}
+
+
 .section-welcome {
   display: flex;
   background-color: #EDF2EC;
   justify-content: space-between;
   padding-left: 110px;
   padding-right: 110px;
+  padding-bottom: 40px;
 }
 
 .section-welcome-info {
@@ -117,10 +130,21 @@ nav ul li {
     padding-left: 50px;
     padding-right: 50px;
     flex-flow: row-reverse;
+
+  }
+
+  .section-welcome-leafs {
+    max-width: 280px;
+    width: 100%;
   }
 
   .section-welcome-leafs img {
-    width: 280px;
+    width: 100%;
+  }
+
+  .welcome-info {
+    min-width: 200px;
+    width: 100%;
   }
 
   .welcome-info h1 {
@@ -136,7 +160,37 @@ nav ul li {
 
   .button-learn {
     margin-top: 30px;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
+  }
+
+}
+
+@media (max-width: 550px) {
+  .section-welcome {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 0;
+  }
+
+  .section-welcome-info {
+    width: 100%;
+  }
+
+  .button-learn {
+    padding: 0;
+    font-size: 10px;
+    height: 34px;
+    width: 100px;
+    margin-bottom: 25px;
+  }
+
+  .welcome-info h1 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .section-welcome-leafs {
+    display: none;
   }
 }
 
@@ -151,10 +205,21 @@ nav ul li {
   justify-content: space-between;
 }
 
+.about-section img {
+  max-width: 464px;
+  width: 100%;
+  max-height: 479px;
+  height: 100%;
+}
+
 .about-us {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-width: 405px;
+  max-width: 605px;
+  width: 100%;
+  margin-right: 40px;
 }
 
 .about-us h1 {
@@ -181,15 +246,18 @@ nav ul li {
     padding-right: 50px;
   }
 
-  .about-section   {
+  .about-section {
     flex-direction: column;
     align-items: center;
   }
 
+  .about-us {
+    width: 668px;
+    margin-right: 0;
+  }
+
   .about-us h1 {
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
     font-weight: 400;
     font-size: 35px;
@@ -206,6 +274,48 @@ nav ul li {
   }
 }
 
+
+/* style.css | http://127.0.0.1:5500/Plants/style.css */
+
+@media (max-width: 550px) {
+  .about {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .about-us {
+    width: auto;
+  }
+
+  .about-us h1 {
+    width: auto;
+    font-size: 25px;
+    line-height: 33px;
+  }
+
+  .about-us p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .about-section img {
+    width: 150px;
+  }
+
+  .about-us {
+    min-width: 200px;
+  }
+
+  .about-us h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .about {
+    padding-bottom: 30px;
+  }
+
+}
 
 .service {
   background: #EDF2EC;
@@ -229,22 +339,27 @@ nav ul li {
 .service-btns {
   display: flex;
   align-items: center;
-
-  margin-left: 100px;
+  max-width: 600px;
+  width: 100%;
+  min-width: 350px;
+  margin-left: 140px;
 }
 
 .service-btns button {
   position: relative;
-  margin-left: 40px;
+  margin-right: 40px;
   color: #E06733;
   background: #EDF2EC;
-  width: 161px;
+  max-width: 161px;
+  width: 100%;
+  min-width: 100px;
   height: 50px;
   border: 1px solid #E06733;
   border-radius: 5px;
   font-family: 'Inika', sans-serif;
   font-size: 20px;
   line-height: 26px;
+
 }
 
 .service-btns button:hover {
@@ -256,26 +371,33 @@ nav ul li {
 
 .services {
   margin-top: 100px;
+  padding-bottom: 5px;
 }
 
-.service-section1 {
-  display: flex;
-  justify-content: space-between;
+.services-section-contant {
+  display: grid;
   margin-bottom: 55px;
-}
-
-.service-section2 {
-  display: flex;
-  justify-content: space-between
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px 111px;
 }
 
 .services-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 450px;
+  margin: 10px 0;
+  max-height: 450px;
+  max-width: 330px;
+  height: 100%;
+  width: 100%;
   border: 1px solid #E3E1D5;
   border-radius: 20px;
+}
+
+.services-section img {
+  max-width: 330px;
+  width: 100%;
 }
 
 .services-section h2 {
@@ -291,6 +413,75 @@ nav ul li {
   font-size: 16px;
   line-height: 20px;
   color: #717171;
+}
+
+@media (max-width: 1000px) {
+  .service {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .services {
+    margin-top: 40px;
+  }
+
+  .service-content {
+    display: block;
+  }
+
+  .service-content h1 {
+    font-size: 35px;
+    font-weight: 400;
+  }
+
+  .service-btns {
+    margin-top: 40px;
+    margin-left: 0;
+  }
+
+  .services-section-contant {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 100px;
+  }
+
+  .services-section {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 550px) {
+  .service-btns {
+    margin-top: 25px;
+  }
+
+  .services-section-contant {
+    grid-template-columns: 1fr;
+  }
+
+  .service {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .services {
+    margin-top: 10px;
+  }
+
+  .service-btns button {
+    margin-right: 10px;
+    max-width: 121px;
+    margin-top: 10px;
+  }
+
+  .service-btns {
+    flex-wrap: wrap;
+  }
+
+  .services-section {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .accordion-price-item {
@@ -339,9 +530,10 @@ nav ul li {
   align-items: center;
   justify-content: space-between;
   background: #EDF2EC;
-  width: 250px;
+  max-width: 250px;
+  width: 100%;
   height: 50px;
-  border: 1px solid black;
+
   cursor: pointer;
   animation: addBottomBorder .1s linear forwards;
 }
@@ -368,10 +560,10 @@ nav ul li {
 .accordion-price-item__content {
   display: none;
   padding-bottom: 5px;
-  border: 1px solid red;
   border-top: none;
   border-radius: 0 0 20px 20px;
-  width: 250px;
+  max-width: 250px;
+  width: 100%;
   animation: hideBlock .2s linear forwards;
 }
 
@@ -527,6 +719,67 @@ nav ul li {
   transition: .4s ease-in-out;
 }
 
+@media (max-width: 1000px) {
+  .prices {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .prices-info {
+    margin-top: 109px;
+  }
+
+  .prices-info h1 {
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .prices {
+    padding-left: 25px;
+    padding-right: 25px;
+    flex-direction: column;
+  }
+
+  .prices-info {
+    margin-top: 20px;
+  }
+
+  .accordion-price {
+    padding: 0 22px 30px 22px;
+    max-width: 225px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .prices-section h1 {
+    margin-bottom: 40px;
+  }
+
+  .prices-info {
+    width: auto;
+  }
+
+  .prices-info h1 {
+    text-align: center;
+  }
+
+  .contact-us-btn {
+    margin-right: auto;
+  }
+
+  .prices-info img {
+    display: none;
+  }
+
+  .prices-section>h1 {
+    text-align: center;
+  }
+}
+
 .contacts {
   display: flex;
   justify-content: space-between;
@@ -613,6 +866,54 @@ nav ul li {
   transition: .4s ease-in-out;
 }
 
+
+@media (max-width: 1000px) {
+  .contacts {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .contacts h1 {
+    text-align: center;
+  }
+
+  .accordion-contact-item {
+    margin-top: 100px;
+    margin-bottom: 250px;
+  }
+
+  .contacts>img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 550px) {
+  .accordion-contact-item {
+    margin-top: 80px;
+    margin-bottom: 130px;
+  }
+
+  .contacts {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .contacts>img {
+    width: 100px;
+  }
+
+  .accordion-contact-item__triger {
+    width: 300px;
+  }
+
+  .accordion-contact-item__content {
+    max-width: 300px;
+  }
+
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -642,4 +943,28 @@ footer {
 
 .footer-net-btn:hover {
   cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  footer {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-net-btns {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width:550px) {
+  footer {
+    padding: 0 25px;
+    line-height: 24px;
+  }
+
+  .school-name {
+    margin-top: 15px;
+  }
 }
