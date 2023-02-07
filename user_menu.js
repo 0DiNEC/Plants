@@ -12,10 +12,8 @@ if (menuIcon) {
 }
 
 if (menuLinks.length > 0) {
-  menuLinks.forEach(menuLink => {
-    menuLink.addEventListener("click", onClickLinkMenu);
-    menuLink.classList.toggle("_active");
-  });
+  menuLinks.forEach(menuLink => 
+    menuLink.addEventListener("click", onClickLinkMenu));
 }
 
 

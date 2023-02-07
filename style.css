@@ -196,7 +196,6 @@ nav ul li {
   }
 }
 
-
 .section-welcome {
   display: flex;
   background-color: #EDF2EC;
@@ -463,6 +462,12 @@ nav ul li {
   font-family: 'Inika', sans-serif;
   font-size: 40px;
   line-height: 52px;
+  cursor: pointer;
+}
+
+.service-content h1:hover {
+  color: #E06733;
+  transition: .5s ease-in-out;
 }
 
 .service-btns {
@@ -475,7 +480,6 @@ nav ul li {
 }
 
 .service-btns button {
-  position: relative;
   margin-right: 40px;
   color: #E06733;
   background: #EDF2EC;
@@ -488,11 +492,10 @@ nav ul li {
   font-family: 'Inika', sans-serif;
   font-size: 20px;
   line-height: 26px;
-
 }
 
 .service-btns button:hover {
-  background-color: #E06733;
+  background: #E06733;
   color: #ffffff;
   cursor: pointer;
   transition: .5s ease-in-out;
@@ -522,6 +525,18 @@ nav ul li {
   width: 100%;
   border: 1px solid #E3E1D5;
   border-radius: 20px;
+}
+
+.garden-section-contant._hide {
+  display: none;
+}
+
+.planting-section-contant._hide {
+  display: none;
+}
+
+.lawn-section-contant._hide {
+  display: none;
 }
 
 .services-section img {
@@ -638,6 +653,7 @@ nav ul li {
   background: #D6E7D2;
   animation: showBlock .2s linear forwards;
   height: 100px;
+  margin: 0 auto;
 }
 
 @keyframes showBlock {
@@ -662,6 +678,7 @@ nav ul li {
   max-width: 250px;
   width: 100%;
   height: 50px;
+  margin: 0 auto;
 
   cursor: pointer;
   animation: addBottomBorder .1s linear forwards;
@@ -727,6 +744,10 @@ nav ul li {
   padding: 40px 110px;
 }
 
+.prices-section {
+  width: 60%;
+}
+
 .prices-section h1 {
   margin-bottom: 60px;
   font-family: 'Inter', sans-serif;
@@ -737,10 +758,14 @@ nav ul li {
 }
 
 .accordion-price {
-  padding: 0 35px 40px 35px;
-
   border: 1px solid #E3E1D5;
   border-radius: 20px;
+  max-width: 300px;
+  min-width: 250px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 30px;
+  align-items: center;
 }
 
 .prices-info {
@@ -852,6 +877,10 @@ nav ul li {
   .prices {
     padding-left: 50px;
     padding-right: 50px;
+  }
+
+  .prices-section {
+    width: auto;
   }
 
   .prices-info {
