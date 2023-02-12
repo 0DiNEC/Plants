@@ -494,7 +494,8 @@ nav ul li {
   line-height: 26px;
 }
 
-.service-btns button:hover {
+.service-btns button:hover,
+.wrapper-btn:hover {
   background: #E06733;
   color: #ffffff;
   cursor: pointer;
@@ -1028,6 +1029,52 @@ nav ul li {
   transition: .4s ease-in-out;
 }
 
+.after-select-wrapper {
+  display: none;
+  flex-direction: column;
+  margin-top: 47px;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  padding: 15px 30px;
+}
+
+.after-select-wrapper.--active {
+  display: flex;
+}
+
+.wrapper-info-item {
+  display: flex;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+}
+
+.wrapper-info-item label {
+  width: 35%;
+}
+
+.wrapper-info-item p {
+  color: #717171;
+}
+
+.wrapper-btn {
+  width: 122px;
+  height: 26px;
+  border: 1px solid #E06733;
+  background: #EDF2EC;
+  border-radius: 5px;
+  font-family: 'Inika', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 13px;
+
+  color: #717171;
+  margin: 20px auto;
+}
 
 @media (max-width: 1000px) {
   .contacts {

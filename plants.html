@@ -196,11 +196,28 @@
             <img src="Assets\img\accordion_btn_down.png" alt="" class="select-btn">
           </div>
           <div class="select-body">
-            <div class="select-item">Canandaigua, NY </div>
-            <div class="select-item">New York City</div>
-            <div class="select-item">Yonkers, NY</div>
-            <div class="select-item">Sherrill, NY</div>
+            <div class="select-item" id="city-canandaigua">Canandaigua, NY </div>
+            <div class="select-item" id="city-newYork">New York City</div>
+            <div class="select-item" id="city-younkers">Yonkers, NY</div>
+            <div class="select-item" id="city-sherrill">Sherrill, NY</div>
           </div>
+        </div>
+        <div class="after-select-wrapper">
+          <div class="wrapper-info">
+            <div class="wrapper-info-item">
+              <label for="wrapper-city-info">City:</label>
+              <p id="wrapper-city-info">Text1</p>
+            </div>
+            <div class="wrapper-info-item">
+              <label for="wrapper-phone-info">Phone:</label>
+              <p id="wrapper-phone-info">Text2</p>
+            </div>
+            <div class="wrapper-info-item">
+              <label for="wrapper-office-info">Office adress:</label>
+              <p id="wrapper-office-info">Text3</p>
+            </div>
+          </div>
+          <button type="submit" class="wrapper-btn">call us</button>
         </div>
       </div>
     </div>
@@ -224,7 +241,7 @@
     </div>
   </footer>
   <script src="accordion_price.js"></script>
-  <script src="select.js"></script>
+  <script src="select.js?version={version}"></script>
   <script src="user_menu.js"></script>
   <script src="service_btns.js"></script>
 </body>
