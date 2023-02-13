@@ -26,7 +26,7 @@ const onBtnLawnService_click = () => {
 
 const hideService = (service1, service2) => {
   if (service1.length > 0)
-  service1.forEach((service) => { service.focus();  });
+  service1.forEach((service) => { service.classList.add('_hide') });
   if (service2.length > 0)
   service2.forEach((service) => { service.classList.add('_hide') });
 }

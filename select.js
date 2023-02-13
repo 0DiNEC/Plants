@@ -1,11 +1,15 @@
 const selectHeader = document.querySelector('.select-header');
 const afterSelectWrapper = document.querySelector('.after-select-wrapper');
+const baba = document.getElementById('baba');
 
 if (selectHeader) {
   selectHeader.addEventListener('click', () => {
     closeOpenSelect(selectHeader.parentNode, true);
-    if (afterSelectWrapper.classList.contains('--active'))
+    if (afterSelectWrapper.classList.contains('--active')) {
       afterSelectWrapper.classList.remove('--active');
+      baba.classList.remove('--active');
+      selectHeader.parentNode.classList.remove('--hide');
+    }
   });
 }
 
@@ -62,6 +66,8 @@ if (select_items.length > 0) {
       current.textContent = item.textContent;
       closeOpenSelect(item.closest('.select'), false);
       afterSelectWrapper.classList.add('--active');
+      baba.classList.add('--active');
+      selectHeader.parentNode.classList.add('--hide');
     });
   });
 }
